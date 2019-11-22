@@ -1,0 +1,43 @@
+{
+  "name": "ugandan-districts",
+  "version": "1.0.2",
+  "description": "An npm package for all districts in Uganda",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles --forceExit",
+    "start": "nodemon --exec babel-node src/index.js",
+    "prepublish": "babel src -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/runtime": "^7.7.2",
+    "nodemon": "^1.19.4",
+    "redis-mock": "^0.47.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "csv-split-easy": "^3.0.41",
+    "jest": "^24.9.0",
+    "redis": "^2.8.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "regenerator": true
+        }
+      ]
+    ]
+  }
+}
