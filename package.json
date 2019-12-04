@@ -1,6 +1,6 @@
 {
   "name": "ugandan-districts",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "An npm package for all districts in Uganda",
   "main": "./dist/index.js",
   "scripts": {
@@ -22,14 +22,13 @@
     "@babel/plugin-transform-runtime": "^7.6.2",
     "@babel/preset-env": "^7.7.1",
     "@babel/runtime": "^7.7.2",
-    "nodemon": "^1.19.4",
-    "redis-mock": "^0.47.0"
+    "jest": "^24.9.0",
+    "moxios": "^0.4.0",
+    "nodemon": "^1.19.4"
   },
   "dependencies": {
     "axios": "^0.19.0",
-    "csv-split-easy": "^3.0.41",
-    "jest": "^24.9.0",
-    "redis": "^2.8.0"
+    "csv-split-easy": "^3.0.41"
   },
   "babel": {
     "presets": [
